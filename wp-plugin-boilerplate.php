@@ -28,6 +28,9 @@ define('WPPB_BLOCKS_ROOT_DIR',        WPPB_PLUGIN_DIR . 'blocks/');
 // Require autoloader
 require_once 'inc/autoloader.php';
 
+// Require settings
+require_once "settings/my-first-gutenberg-app.php";
+
 // Run
 require_once 'wp-plugin-boilerplate.plugin.php';
 $GLOBALS['wppb'] = new WP_Plugin_Boilerplate();

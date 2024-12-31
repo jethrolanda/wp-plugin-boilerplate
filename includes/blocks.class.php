@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPB\Plugin;
+namespace RAPFW\Plugin;
 
 /**
  * Plugins custom settings page that adheres to wp standard
@@ -79,34 +79,34 @@ class Blocks
   /**
    * Register block pattern for Empty Cart Message to make it translatable.
    */
-  public function register_patterns()
-  {
-    register_block_pattern(
-      'fuel-logic-service-area/success-zipcode',
-      array(
-        'title'    => 'Success Zipcode',
-        'description' => _x('Success Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
-        'inserter' => false,
-        'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Success Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
-      )
-    );
-    register_block_pattern(
-      'fuel-logic-service-area/invalid-zipcode',
-      array(
-        'title'    => 'Invalid Zipcode',
-        'description' => _x('Invalid Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
-        'inserter' => false,
-        'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Invalid Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
-      )
-    );
-    register_block_pattern(
-      'fuel-logic-service-area/banned-zipcode',
-      array(
-        'title'    => 'Banned Zipcode',
-        'description' => _x('Banned Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
-        'inserter' => false,
-        'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Banned Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
-      )
-    );
-  }
+  // public function register_patterns()
+  // {
+  //   register_block_pattern(
+  //     'fuel-logic-service-area/success-zipcode',
+  //     array(
+  //       'title'    => 'Success Zipcode',
+  //       'description' => _x('Success Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
+  //       'inserter' => false,
+  //       'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Success Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
+  //     )
+  //   );
+  //   register_block_pattern(
+  //     'fuel-logic-service-area/invalid-zipcode',
+  //     array(
+  //       'title'    => 'Invalid Zipcode',
+  //       'description' => _x('Invalid Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
+  //       'inserter' => false,
+  //       'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Invalid Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
+  //     )
+  //   );
+  //   register_block_pattern(
+  //     'fuel-logic-service-area/banned-zipcode',
+  //     array(
+  //       'title'    => 'Banned Zipcode',
+  //       'description' => _x('Banned Zipcode.', 'Block pattern description', 'wpdocs-my-plugin'),
+  //       'inserter' => false,
+  //       'content'  => '<!-- wp:heading {"align":"wide", "level":1} --><h1 class="wp-block-heading alignwide">' . esc_html__('Banned Zipcode', 'woocommerce') . '</h1><!-- /wp:heading -->',
+  //     )
+  //   );
+  // }
 }
