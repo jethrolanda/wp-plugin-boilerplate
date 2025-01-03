@@ -4,8 +4,8 @@
  * Plugin Name: WP Plugin Boilerplate
  * Description: WP Plugin Boilerplate
  * Version: 1.0
- * Author: Xammis
- * Author URI: https://xammis.com/
+ * Author: Jethrolanda
+ * Author URI: https://jethrolanda.com/
  * Text Domain: wp-plugin-boilerplate
  * Domain Path: /languages/
  * Requires at least: 5.7

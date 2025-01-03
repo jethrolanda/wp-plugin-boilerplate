@@ -42,10 +42,10 @@ class WP_Plugin_Boilerplate
 		$this->shortcode = WPPB\Plugin\Shortcode::instance();
 
 		// Register Activation Hook
-		register_activation_hook(WPPB_PLUGIN_DIR . 'fuel-logic-service-area.php', array($this, 'activate'));
+		register_activation_hook(WPPB_PLUGIN_DIR . 'wp-plugin-boilerplate.php', array($this, 'activate'));
 
 		// Register Deactivation Hook
-		register_deactivation_hook(WPPB_PLUGIN_DIR . 'fuel-logic-service-area.php', array($this, 'deactivate'));
+		register_deactivation_hook(WPPB_PLUGIN_DIR . 'wp-plugin-boilerplate.php', array($this, 'deactivate'));
 	}
 
 	/**
