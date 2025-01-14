@@ -1,6 +1,6 @@
 <?php
 
-namespace RAPFW\Plugin;
+namespace WPPB\Plugin;
 
 /**
  * Plugins custom settings page that adheres to wp standard

@@ -19,6 +19,7 @@ class WP_Plugin_Boilerplate
 	public $blocks;
 	public $ajax;
 	public $shortcode;
+	public $rest;
 
 	const VERSION = '1.0';
 
@@ -40,6 +41,7 @@ class WP_Plugin_Boilerplate
 		$this->blocks = WPPB\Plugin\Blocks::instance();
 		$this->ajax = WPPB\Plugin\Ajax::instance();
 		$this->shortcode = WPPB\Plugin\Shortcode::instance();
+		$this->rest = WPPB\Plugin\Rest::instance();
 
 		// Register Activation Hook
 		register_activation_hook(WPPB_PLUGIN_DIR . 'wp-plugin-boilerplate.php', array($this, 'activate'));
